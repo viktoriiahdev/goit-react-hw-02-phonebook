@@ -21,8 +21,6 @@ const List = styled.ul`
 const ContactItem = styled.li`
   position: relative;
 
-  /* width: 100px; */
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

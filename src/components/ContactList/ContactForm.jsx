@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import React from 'react';
 
 import { HiOutlineUserAdd } from 'react-icons/hi';
@@ -81,7 +79,3 @@ class ContactForm extends React.Component {
 }
 
 export default ContactForm;
-
-ContactForm.propTypes = {
-  value: PropTypes.string,
-};

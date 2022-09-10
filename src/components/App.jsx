@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Section from './ContactList/Section';
+import Section from './ContactList/Section.styled';
 import ContactList from './ContactList';
 import ContactForm from './ContactList/ContactForm';
 import Filter from './ContactList/Filter';

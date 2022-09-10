@@ -7,7 +7,6 @@ import styled from 'styled-components';
 const FilterWrapper = styled.div`
   display: flex;
   gap: 20px;
-  /* flex-direction: column; */
 
   h3 {
     font-weight: 600;
