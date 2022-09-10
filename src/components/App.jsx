@@ -1,9 +1,10 @@
 import React from 'react';
 
-import Section from './ContactList/Section.styled';
+import Section from './Section/Section.styled';
+
 import ContactList from './ContactList';
-import ContactForm from './ContactList/ContactForm';
-import Filter from './ContactList/Filter';
+import ContactForm from './ContactForm/ContactForm';
+import Filter from './Filter/Filter';
 
 import contacts from 'contacts.json';
 import { nanoid } from 'nanoid';

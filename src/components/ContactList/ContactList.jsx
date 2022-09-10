@@ -1,3 +1,4 @@
+import ButtonWithIcon from 'components/IconButton/IconButton.styled';
 import PropTypes from 'prop-types';
 
 import React from 'react';
@@ -95,7 +96,13 @@ const ContactList = ({ contacts, onClick }) => (
       <ContactItem key={id}>
         <p className="ContactItem__name">{name}</p>
         <p className="ContactItem__number">{number}</p>
-        <HiOutlineX className="ContactItem__remove" color="red" onClick={() => onClick(id)} />
+        <ButtonWithIcon
+          aria-label="Remove contact"
+          className="ContactItem__remove"
+          onClick={() => onClick(id)}
+        >
+          <HiOutlineX color="red" />
+        </ButtonWithIcon>
       </ContactItem>
     ))}
   </List>
@@ -111,4 +118,5 @@ ContactList.propTypes = {
       number: PropTypes.string.isRequired,
     }).isRequired
   ),
+  onClick: PropTypes.func.isRequired,
 };

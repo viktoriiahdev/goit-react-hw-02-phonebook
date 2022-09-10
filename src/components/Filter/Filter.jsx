@@ -53,4 +53,5 @@ export default Filter;
 
 Filter.propTypes = {
   value: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
 };

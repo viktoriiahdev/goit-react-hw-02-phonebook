@@ -1,3 +1,6 @@
+import ButtonWithIcon from 'components/IconButton/IconButton.styled';
+import PropTypes from 'prop-types';
+
 import React from 'react';
 
 import { HiOutlineUserAdd } from 'react-icons/hi';
@@ -70,12 +73,16 @@ class ContactForm extends React.Component {
             onChange={this.handleChange}
           />
         </label>
-        <button type="submit">
+        <ButtonWithIcon type="submit" aria-label="Add new contact">
           <HiOutlineUserAdd size={25} color="#913fd5" />
-        </button>
+        </ButtonWithIcon>
       </Form>
     );
   }
 }
 
 export default ContactForm;
+
+ContactForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
