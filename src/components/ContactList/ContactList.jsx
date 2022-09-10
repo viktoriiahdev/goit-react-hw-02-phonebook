@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import React from 'react';
 
 import { HiOutlineX } from 'react-icons/hi';
@@ -9,8 +11,6 @@ const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px 20px;
-
-  /* max-width: 600px; */
 
   font-family: 'Inconsolata';
 
@@ -104,3 +104,13 @@ const ContactList = ({ contacts, onClick }) => (
 );
 
 export default ContactList;
+
+ContactList.propTypes = {
+  contacts: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+    }).isRequired
+  ),
+};

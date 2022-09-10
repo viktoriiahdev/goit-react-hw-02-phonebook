@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import React from 'react';
 import { HiOutlineSearch } from 'react-icons/hi';
 import styled from 'styled-components';
@@ -28,7 +30,6 @@ const FilterWrapper = styled.div`
 
   .Filter__input {
     padding-left: 20px;
-    opacity: 0.4;
 
     &:hover,
     &:focus {
@@ -50,3 +51,7 @@ const Filter = ({ value, onChange }) => (
 );
 
 export default Filter;
+
+Filter.propTypes = {
+  value: PropTypes.string,
+};
